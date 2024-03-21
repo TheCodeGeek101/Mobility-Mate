@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobility_mate/core/utils/Colors.dart';
-
+import 'package:lottie/lottie.dart';
 class Exercise extends StatelessWidget {
   Exercise({super.key});
 
@@ -13,8 +13,8 @@ class Exercise extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children:[
-              Image.asset("assets/images/exercise4.jpg",height:300),
-
+              // Image.asset("assets/images/exercise4.jpg",height:300),
+              Lottie.asset('assets/animations/animation3.json'),
               Padding(
                   padding: EdgeInsets.symmetric(horizontal:20),
                   child: Column(

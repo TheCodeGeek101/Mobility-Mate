@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobility_mate/core/utils/Colors.dart';
-
+import 'package:lottie/lottie.dart';
 class WelcomeScreen extends StatelessWidget {
   WelcomeScreen({super.key});
 
@@ -20,7 +20,8 @@ class WelcomeScreen extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children:[
-              Image.asset("assets/images/exercise3.jpg",height:300),
+              Lottie.asset('assets/animations/animation1.json'),
+              // Image.asset("assets/images/exercise3.jpg",height:300),
               Padding(
                   padding: EdgeInsets.symmetric(horizontal:20),
                   child: Column(

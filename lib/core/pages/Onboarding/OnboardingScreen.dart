@@ -31,8 +31,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       final pages = [
         WelcomeScreen(),
         Exercise(),
-        ConnectionScreen(),
-        ProgressScreen()
+        ProgressScreen(),
+        ConnectionScreen()
       ];
 
     return Scaffold(

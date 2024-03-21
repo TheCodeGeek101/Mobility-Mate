@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobility_mate/core/utils/Colors.dart';
+import 'package:lottie/lottie.dart';
+import 'package:mobility_mate/features/Authentication/Presentation/pages/SignIn.dart';
 
 class ConnectionScreen extends StatelessWidget {
   const ConnectionScreen({super.key});
@@ -13,7 +15,8 @@ class ConnectionScreen extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children:[
-              Image.asset("assets/images/connected.jpg",height:300),
+              // Image.asset("assets/images/connected.jpg",height:300),
+              Lottie.asset('assets/animations/animation4.json'),
               Padding(
                   padding: EdgeInsets.symmetric(horizontal:20),
                   child: Column(
@@ -48,8 +51,8 @@ class ConnectionScreen extends StatelessWidget {
                                 onPrimary: Constants.primaryColor, // foreground
                               ),
                               onPressed: () {
-                                // Navigator.pushReplacement(context,
-                                //     MaterialPageRoute(builder: (_) => const SignIn()));
+                                Navigator.pushReplacement(context,
+                                    MaterialPageRoute(builder: (_) => const SignIn()));
                               },
                               child: const Text('Get Started'),
                             )

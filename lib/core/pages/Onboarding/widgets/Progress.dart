@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobility_mate/core/utils/Colors.dart';
-
+import 'package:lottie/lottie.dart';
 class ProgressScreen extends StatelessWidget {
   ProgressScreen({super.key});
 
@@ -20,7 +20,8 @@ class ProgressScreen extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children:[
-              Image.asset("assets/images/progress.png",height:300),
+              // Image.asset("assets/images/progress.png",height:300),
+              Lottie.asset('assets/animations/animation2.json'),
               Padding(
                   padding: EdgeInsets.symmetric(horizontal:20),
                   child: Column(
@@ -52,7 +53,7 @@ class ProgressScreen extends StatelessWidget {
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                 primary: Constants.secondaryColor, // background
-                                onPrimary: Colors.black, // foreground
+                                onPrimary: Colors.white, // foreground
                               ),
                               onPressed: () {
                                 // Navigator.pushReplacement(context,
